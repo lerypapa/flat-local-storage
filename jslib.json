@@ -1,0 +1,11 @@
+{
+    "name": "simple-local-stoage",
+    "npmname": "simple-local-stoage",
+    "umdname": "simple-local-stoage",
+    "username": "lerypapa",
+    "type": "ts",
+    "module": "umd,esm,commonjs",
+    "test": "mocha",
+    "lang": "en",
+    "version": "1.6.0"
+}
