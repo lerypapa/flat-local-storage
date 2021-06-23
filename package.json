@@ -1,7 +1,7 @@
 {
-  "name": "simple-local-stoage",
+  "name": "simple-local-storage",
   "version": "1.0.0",
-  "description": "Simple wrapper of localStorage api.",
+  "description": "Simple wrapper of localStorage API.",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
@@ -23,10 +23,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lerypapa/simple-local-stoage.git"
+    "url": "git://github.com/lerypapa/simple-local-storage.git"
   },
   "bugs": {
-    "url": "https://github.com/lerypapa/simple-local-stoage/issues"
+    "url": "https://github.com/lerypapa/simple-local-storage/issues"
   },
   "files": [
     "/dist",
