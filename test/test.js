@@ -27,6 +27,19 @@ describe('simple-local-storage', function () {
 			storage.setItem('jsonobj', jsonobj)
 			expect(storage.getItem('jsonobj')).to.eql(jsonobj);
 		});
+		it('should return array', function () {
+			let arr = {
+				a: 1,
+				b: {
+					c: '2',
+					d: [{
+						g: 'c'
+					}]
+				}
+			}
+			storage.setItem('arr', arr)
+			expect(storage.getItem('arr')).to.eql(arr);
+		});
 		it('should return string', function () {
 			let str = 'test str'
 			storage.setItem('str', str)
@@ -41,6 +54,11 @@ describe('simple-local-storage', function () {
 			let u = undefined
 			storage.setItem('u', u)
 			expect(storage.getItem('u')).to.equal(undefined);
+		});
+		it('should return number', function () {
+			let n = 1
+			storage.setItem('n', n)
+			expect(storage.getItem('n')).to.equal(1);
 		});
 	});
 });

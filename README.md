@@ -39,7 +39,7 @@ Unit tests guarantee support on the following environment:
 └── TODO.md - Planned features
 ```
 
-## Usage Instructions
+## Install
 
 Using npm, download and install the code. 
 
@@ -50,19 +50,19 @@ $ npm install --save simple-local-stoage
 For node environment：
 
 ```js
-var base = require('simple-local-stoage');
+var storage = require('simple-local-stoage');
 ```
 
 For webpack or similar environment：
 
 ```js
-import base from 'simple-local-stoage';
+import storage from 'simple-local-stoage';
 ```
 
 For requirejs environment:
 
 ```js
-requirejs(['node_modules/simple-local-stoage/dist/index.aio.js'], function (base) {
+requirejs(['node_modules/simple-local-stoage/dist/index.aio.js'], function (storage) {
     // do something...
 })
 ```
@@ -73,8 +73,105 @@ For browser environment:
 <script src="node_modules/simple-local-stoage/dist/index.aio.js"></script>
 ```
 
-## Documents
-[API](./doc/api.md)
+## Basic Usage
+### Initialization
+storage.init({
+  name: 'NAME',
+  version: '1.0.0'
+})
+### Set and Get Item
+#### Set and get a value of type string
+```js
+storage.setItem('subkey', 'the string')
+```
+```js
+storage.getItem('subkey')
+// expect to return 'the string'
+```
+
+#### Set and get a value of type json object 
+```js
+storage.setItem('subkey', {
+  a: {
+    b: {
+      c: 123,
+      d: '789',
+    }
+  }
+})
+```
+```js
+storage.getItem('subkey')
+/**
+ expect to return {
+  a: {
+    b: {
+      c: 123,
+      d: '789',
+    }
+  }
+}
+*/
+```
+
+#### Set and get a value of type json array
+```js
+storage.setItem('subkey', [{
+  a: 1,
+  b: {
+    c: '2',
+    d: [{
+      g: 'c'
+    }]
+  }
+}])
+```
+```js
+storage.getItem('subkey')
+/**
+ expect to return {
+  a: 1,
+  b: {
+    c: '2',
+    d: [{
+      g: 'c'
+    }]
+  }
+}
+*/
+```
+#### Set and get a value of type number
+```js
+storage.setItem('subkey', 1)
+```
+```js
+storage.getItem('subkey')
+/**
+ expect to return 1
+*/
+```
+
+#### Set and get a value of type null
+```js
+storage.setItem('subkey', null)
+```
+```js
+storage.getItem('subkey')
+/**
+ expect to return null
+*/
+```
+
+#### Set and get a value of type undefined
+```js
+storage.setItem('subkey', undefined)
+```
+```js
+storage.getItem('subkey')
+/**
+ expect to return undefined
+*/
+```
 
 ## Contribution Guide
 For the first time to run, you need to install dependencies firstly.
