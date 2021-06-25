@@ -1,7 +1,7 @@
 {
-  "name": "@lerypapa/flat-local-storage",
+  "name": "flat-local-storage",
   "version": "1.0.0",
-  "description": "Simple wrapper of localStorage API.",
+  "description": "Simple wrapper of localStorage API that support serialization and deserialization.",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
