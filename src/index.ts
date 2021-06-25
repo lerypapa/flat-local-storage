@@ -54,6 +54,14 @@ class Storage {
     }
     return undefined;
   }
+
+  removeItem(subKey: string) {
+    localStorage.removeItem(this.genKey(subKey))
+  }
+
+  clear() {
+    localStorage.clear()
+  }
 }
 
 export default new Storage();

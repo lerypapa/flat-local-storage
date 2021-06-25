@@ -173,6 +173,16 @@ storage.getItem('subkey')
 */
 ```
 
+#### removeItem
+```js
+storage.removeItem('subkey')
+```
+
+#### clear
+```js
+storage.removeItem('subkey')
+```
+
 ## Contribution Guide
 For the first time to run, you need to install dependencies firstly.
 
