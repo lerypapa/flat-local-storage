@@ -6,10 +6,10 @@ var version = pkg.version;
 
 var banner = 
 `/*!
- * ${pkg.name} ${version} (https://github.com/lerypapa/simple-local-stoage)
- * API https://github.com/lerypapa/simple-local-stoage/blob/master/doc/api.md
+ * ${pkg.name} ${version} (https://github.com/lerypapa/flat-local-storage)
+ * API https://github.com/lerypapa/flat-local-storage/blob/master/doc/api.md
  * Copyright 2017-${(new Date).getFullYear()} lerypapa. All Rights Reserved
- * Licensed under MIT (https://github.com/lerypapa/simple-local-stoage/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/lerypapa/flat-local-storage/blob/master/LICENSE)
  */
 `;
 
@@ -21,6 +21,6 @@ function getCompiler(opt) {
     return typescript(opt);
 }
 
-exports.name = 'simple-local-stoage';
+exports.name = 'flat-local-storage';
 exports.banner = banner;
 exports.getCompiler = getCompiler;

@@ -1,7 +1,7 @@
 {
-    "name": "simple-local-stoage",
-    "npmname": "simple-local-stoage",
-    "umdname": "simple-local-stoage",
+    "name": "flat-local-storage",
+    "npmname": "flat-local-storage",
+    "umdname": "flat-local-storage",
     "username": "lerypapa",
     "type": "ts",
     "module": "umd,esm,commonjs",

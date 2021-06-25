@@ -11,6 +11,8 @@ declare class Storage {
     genKey(subKey: string): string;
     setItem(subKey: string, value: ItemValue): void;
     getItem(subKey: string, defaultValue: ItemValue): ItemValue;
+    removeItem(subKey: string): void;
+    clear(): void;
 }
 declare const _default: Storage;
 export default _default;
