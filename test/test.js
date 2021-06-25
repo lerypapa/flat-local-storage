@@ -3,11 +3,11 @@ var expect = require('expect.js');
 // ts 测试编译后文件
 var storage = require('../src/index.ts');
 storage.init({
-	name: 'simple-local-storage-test',
+	name: 'flat-local-storage-test',
 	version: '1.0.0'
 })
 
-describe('simple-local-storage', function () {
+describe('flat-local-storage', function () {
 	describe('getItem', function () {
 		it('should return null when passed key has not been set', function () {
 			expect(storage.getItem('abc')).to.equal(null);

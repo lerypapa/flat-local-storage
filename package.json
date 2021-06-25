@@ -1,5 +1,5 @@
 {
-  "name": "@lerypapa/simple-local-storage",
+  "name": "@lerypapa/flat-local-storage",
   "version": "1.0.1",
   "description": "Simple wrapper of localStorage API.",
   "main": "dist/index.js",
@@ -23,10 +23,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lerypapa/simple-local-storage.git"
+    "url": "git://github.com/lerypapa/flat-local-storage.git"
   },
   "bugs": {
-    "url": "https://github.com/lerypapa/simple-local-storage/issues"
+    "url": "https://github.com/lerypapa/flat-local-storage/issues"
   },
   "files": [
     "/dist",

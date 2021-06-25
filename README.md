@@ -1,11 +1,11 @@
-# [simple-local-storage](https://github.com/lerypapa/simple-local-storage)
+# [flat-local-storage](https://github.com/lerypapa/flat-local-storage)
 [![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/yanhaijing/jslib-base)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lerypapa/simple-local-storage/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/lerypapa/simple-local-storage.svg?branch=master)](https://travis-ci.org/lerypapa/simple-local-storage)
-[![Coveralls](https://img.shields.io/coveralls/lerypapa/simple-local-storage.svg)](https://coveralls.io/github/lerypapa/simple-local-storage)
-[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/simple-local-storage)
-[![NPM downloads](http://img.shields.io/npm/dm/simple-local-storage.svg?style=flat-square)](http://www.npmtrends.com/simple-local-storage)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/lerypapa/simple-local-storage.svg)](http://isitmaintained.com/project/lerypapa/simple-local-storage "Percentage of issues still open")
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lerypapa/flat-local-storage/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/lerypapa/flat-local-storage.svg?branch=master)](https://travis-ci.org/lerypapa/flat-local-storage)
+[![Coveralls](https://img.shields.io/coveralls/lerypapa/flat-local-storage.svg)](https://coveralls.io/github/lerypapa/flat-local-storage)
+[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/flat-local-storage)
+[![NPM downloads](http://img.shields.io/npm/dm/flat-local-storage.svg?style=flat-square)](http://www.npmtrends.com/flat-local-storage)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/lerypapa/flat-local-storage.svg)](http://isitmaintained.com/project/lerypapa/flat-local-storage "Percentage of issues still open")
 
 The best third party `JS|TS` library scaffold. 
 
@@ -44,25 +44,25 @@ Unit tests guarantee support on the following environment:
 Using npm, download and install the code. 
 
 ```bash
-$ npm install --save simple-local-storage
+$ npm install --save flat-local-storage
 ```
 
 For node environment：
 
 ```js
-var storage = require('simple-local-storage');
+var storage = require('flat-local-storage');
 ```
 
 For webpack or similar environment：
 
 ```js
-import storage from 'simple-local-storage';
+import storage from 'flat-local-storage';
 ```
 
 For requirejs environment:
 
 ```js
-requirejs(['node_modules/simple-local-storage/dist/index.aio.js'], function (storage) {
+requirejs(['node_modules/flat-local-storage/dist/index.aio.js'], function (storage) {
     // do something...
 })
 ```
@@ -70,7 +70,7 @@ requirejs(['node_modules/simple-local-storage/dist/index.aio.js'], function (sto
 For browser environment:
 
 ```html
-<script src="node_modules/simple-local-storage/dist/index.aio.js"></script>
+<script src="node_modules/flat-local-storage/dist/index.aio.js"></script>
 ```
 
 ## Basic Usage
@@ -218,7 +218,7 @@ $ npm publish
 
 ## Contributors
 
-[contributors](https://github.com/lerypapa/simple-local-storage/graphs/contributors)
+[contributors](https://github.com/lerypapa/flat-local-storage/graphs/contributors)
 
 ## Change Log
 [CHANGELOG.md](./CHANGELOG.md)
